@@ -18,10 +18,10 @@ public class GoogleCloudStoreServiceTest {
         ss= new GoogleCloudStoreService();
     }
 
-    @Test
+    //@Test
     public void testImageUpload() throws FileNotFoundException {
 
-        InputStream is = new BufferedInputStream(new FileInputStream("/home/teo/Pictures/IMG_20171003_142557.vr.jpg"));
+        InputStream is = new BufferedInputStream(new FileInputStream(""));
         Food food = new Food();
         food.setName("unnomeacazzo");
 
