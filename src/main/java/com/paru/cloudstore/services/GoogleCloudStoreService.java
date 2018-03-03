@@ -26,11 +26,7 @@ public class GoogleCloudStoreService implements StoreService {
 
         Blob result = bucket.create(food.getName()+"_"+Math.random()+".jpg", picStream, "image/jpeg");
 
-        if(result !=null ){
-            return  true;
-        } else {
-            return false;
-        }
+        return result != null;
     }
 
     @PostConstruct
